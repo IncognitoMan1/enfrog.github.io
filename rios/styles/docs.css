@@ -2,7 +2,49 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+i {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
     background-color: rgb(255, 253, 240);
     padding-bottom: 20%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidenavbar {
+    height: 100%;
+    position: fixed;
+    background-color: rgb(23, 23, 23);
+    top: 0;
+    left: 0;
+    padding: 0px 50px 20px 20px;
+}
+
+
+.sidenavbar a{
+    color: rgb(234, 234, 234);
+    text-decoration: none;
+    size: 20pt;
+}
+
+.sidenavbar a:hover{
+    color: rgb(220, 220, 220);
+}
+
+.sidenavbar a:focus{
+    color: rgb(249, 232, 199);
+}
+
+
+.sidenavbar h1{
+    color: rgb(250, 250, 250);
+}
+
+.sidenavbar i {
+    color: rgb(234, 234, 234);
 }
