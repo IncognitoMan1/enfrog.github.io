@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIOS Docs</title>
+    <link rel="icon" href="../images/rioscolored.png">
+    <link rel="stylesheet" href="../../styles/docs.css">
+    <script src="https://kit.fontawesome.com/5c48fa0b49.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidenavbar">
+        <h1>Retro IO System</h1>
+        <ul class="sidenavbarlistitems">
+            <li class="test"><i class="fa-solid fa-arrows-rotate"></i><a href="getting-started">Getting started</a></li>
+            <li><i class="fa-solid fa-display"></i><a href="#">OS API</a></li>
+            <li><i class="fa-solid fa-tablet-screen-button"></i><a href="countapps.html">countApps</a></li>
+            <li><i class="fa-solid fa-microchip"></i><a href="#">Systems</a></li>
+        </ul>
+    </div>
+    <div class="maingrid">
+        <div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <h1 id="codetitle"  style="margin-bottom: 50px;">Getting Started</h1>
+                <h1><font id="synt">RIOS for OS Devs:</font></h1>
+                <!--<img src="../../images/osapi/countApps.png" alt="img" id="codeimgexample" width="70%" style="border-radius: 7px;">-->
+    
+                <h2>Setting up RIOS on your gadget</h2>
+                <div class="textcont">
+                    <ul class="list">
+                        <li>Download <font id="code">rios.lua</font> from any example file or an empty one at the official RIOS github page. <br><a href="https://github.com/VincentFoulon80/retro-input-output-system">https://github.com/VincentFoulon80/retro-input-output-system</a></li>
+                        <li>If you took the empty file, fill the functions with missing functionality. (See <font id="code">--todo</font>) in the files functions (<font id="code">rios.lua</font>)</li>
+                        <li>If you took any of the example file, Set up the two device lists located in the middle of the rios file, below the constants</li>
+                        <li>On the <font id="code">CPU</font> file of your gadget, require <font id="code">rios.lua</font> in a variable</li>
+                        <div class="textcont">
+                            <p><font id="synt">local</font> rios <font id="synt">=</font> <font id="func">require</font>(<font id="str">"rios.lua"</font>)</p>
+                        </div>
+                        <li>(OPTIONAL) remove access to gdt just after requiring RIOS</li>
+                        <div class="textcont">
+                            <p>gdt <font id="synt">=</font> <font id="func">nil</font></p>
+                        </div>
+                    </ul>
+                </div>
+                <h2>Running apps using RIOS</h2>
+                <div class="textcont">
+                    <ul class="list">
+                        <li>Require the apps you want to run, and use the registerApp function to register it to RIOS</li>
+                        <li>In the update() function, run:</li>
+                        <div class="textcont">
+                            <p>rios.<font id="func">runApps</font>(rios)</p>
+                        </div>
+                    </ul>
+                </div>
+                <h1 id="newline"><font id="synt">RIOS For App Devs</font></h1>
+                <div class="textcont">
+                    <ul class="list">
+                        <li>Require the apps you want to run, and use the registerApp function to register it to RIOS</li>
+                        <li>In the update() function, run:</li>
+                        <div class="textcont">
+                            <p>rios.<font id="func">runApps</font>(rios)</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

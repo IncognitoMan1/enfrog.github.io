@@ -1,5 +1,13 @@
+:root {
+    --sidedisp: block;
+    /*DISPLAY AS NONE IF YOU WANT TO HIDE AND BLOCK IF YOU WANT IT TO APPEAR*/
+}
+
 * {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flexbox;
+    flex-wrap: wrap;
+    flex: content;
 }
 
 i {
@@ -7,8 +15,9 @@ i {
 }
 
 body {
-    background-color: rgb(255, 253, 240);
+    background-color: rgb(38, 38, 38);
     padding-bottom: 20%;
+    margin: 0;
 }
 
 ul {
@@ -16,13 +25,20 @@ ul {
     padding-left: 0;
 }
 
+.maingrid {
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+
 .sidenavbar {
     height: 100%;
-    position: fixed;
     background-color: rgb(23, 23, 23);
-    top: 0;
-    left: 0;
+    margin: 0;
     padding: 0px 50px 20px 20px;
+    display: var(--sidedisp);
+    float: left;
+    position: fixed;
 }
 
 
@@ -40,6 +56,10 @@ ul {
     color: rgb(249, 232, 199);
 }
 
+.sidenavbar a:current{
+    color: rgb(249, 232, 199);
+}
+
 
 .sidenavbar h1{
     color: rgb(250, 250, 250);
@@ -47,4 +67,65 @@ ul {
 
 .sidenavbar i {
     color: rgb(234, 234, 234);
+}
+
+/*CODE RELATED CONTAINERS*/
+
+.container {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    display: table;
+    margin: auto;
+    margin-bottom: 6%;
+}
+
+
+
+.textcont {
+    border: 3px solid rgb(20, 20, 20);
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 20px;
+}
+
+.list{
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.list li {
+    margin-bottom: 25px
+}
+
+.list a{
+    color: rgb(51, 204, 204);;
+}
+
+#newline {
+    margin-top: 90px;
+}
+
+#func {
+    color: rgb(138, 201, 253);
+}
+
+#synt {
+    color: rgb(253, 138, 138);
+}
+
+#str {
+    color: rgb(253, 240, 138);
+}
+
+#codetitle {
+    color: rgb(205, 49, 49);
+}
+
+#code {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 230, 230);
 }
