@@ -1,0 +1,17 @@
+[UPDATED 12/10/2022]
+ - 12/10/2022
+ Github RIOS documentation was created
+ Construction of apfrog.github.io/rios was started (WIP)
+
+ — 12/09/2022 
+ First devkit created, supports multiple inputs, screens, etc
+
+ — 12/08/2022
+ First icon design, design change from terminal to memory chip to security chip with monochrome and colored versions.
+
+ — 12/06/2022 
+ Ported breakout game into a RIOS app.
+
+ — 12/05/2022
+ RIOS idea first concept.
+ Name decision: From RetrOSI to RIOS.
