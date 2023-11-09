@@ -1,0 +1,64 @@
+:root {
+    --bg-main-color: rgb(10, 16, 27);
+    --bg-navbar-color: rgb(9, 18, 32); /*deprecated*/
+    --bg-panel-color: rgb(23, 33, 49);
+    
+    --fg-a-color: rgb(67, 111, 185);
+
+    --border: 1px solid rgb(25, 35, 51);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-main-color);
+}
+
+
+.bar {
+    width: 100%;
+    border-bottom: var(--border);
+    /* add sticky here if need */
+}
+
+.navbar {
+    /* top, right, btm, left  */
+    /*padding: 0 35% 0 35%;*/
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    left: 35%;
+    height: 60%;
+}
+
+.navbar > a {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-decoration: none;
+    height: 20%;
+    color: var(--fg-a-color);
+}
+
+.content {
+    height: 100%;
+}
+
+.panel {
+    color: white;
+    background-color: var(--bg-panel-color);
+    border-radius: 5px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    position: relative;
+    left: 30%;
+    border: var(--border);
+}
